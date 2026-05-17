@@ -1,0 +1,674 @@
+@font-face {
+    font-family: "Conso Medium";
+    src: url(Conso/OTF/Conso-Medium.otf);
+}
+
+@font-face {
+    font-family: "Conso Regular";
+    src: url(Conso/OTF/Conso-Regular.otf);
+}
+
+
+@font-face {
+    font-family: "Inter Medium";
+    src: url(inter/Inter-Medium.otf);
+}
+
+@font-face {
+    font-family: "Inter Light";
+    src: url(inter/Inter-Light-BETA.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter Light";
+    background-color: white;
+    color: #121212;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /*logoet ryger til venstre og menuen til højre*/
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #edece8;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: "Conso Medium";
+    font-size: 32px;
+    color: #462521;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.logo:hover {
+    border-bottom: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px; /*afstand mellem menupunkterne*/
+}
+
+nav a {
+    text-decoration: none;
+    color: #462521;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+nav ul a:hover {
+    border-bottom: 1px solid #462521;
+}
+
+.hero {
+    height: 100vh; /*90% af skærmens højde*/
+    background-image: url("hero.jpg");
+    background-size: cover; /*billedet fylder hele sektionen*/
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 70px;
+    font-family: "Conso Medium";
+}
+
+.hero-text h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-family: "Inter Medium";
+    letter-spacing: 4px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #462521;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-family: "Inter Medium";
+    letter-spacing: 4px;
+}
+
+.btn:hover {
+    background-color: #2f1919;
+}
+
+.home-preview {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 120px 80px;
+}
+
+.home-text {
+    max-width: 430px;
+}
+
+.home-text h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-family: "Conso Regular";
+    line-height: 1;
+}
+
+.home-text p {
+    line-height: 1.7;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.home-image img {
+    width: 350px;
+    height: 420px;
+    object-fit: cover;
+}
+
+.projects {
+    background-color: #e8f6fb;
+    padding: 90px 80px 140px;
+}
+
+.projects h2 {
+    text-align: center;
+    font-family: "Conso Medium";
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    background-color: #e8f6fb;
+}
+
+.project-card {
+    background-color: white;
+    padding: 10px;
+    transition:
+        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.project-card img {
+    width: 400px;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+}
+
+.project-card p {
+    font-family: "Inter Medium";
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.28)
+}
+
+footer {
+    background-color: #edece8;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 2px;
+    color: #462521;
+}
+
+footer h2 {
+    font-size: 18px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.contact-info img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.socials img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.about-page {
+    background-color: white;
+    padding: 140px 80px 100px;
+}
+
+.page-title {
+    font-family: "Conso Medium";
+    font-size: 70px;
+    text-align: center;
+    margin: 40px 0 120px 0;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 100px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-text {
+    max-width: 420px;
+}
+
+.about-text h2 {
+    font-size: 50px;
+    font-family: "Conso Regular";
+    margin-bottom: 30px;
+    line-height: 1;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+
+.about-image img {
+    width: 380px;
+    height: 475px;
+    object-fit: cover;
+}
+
+.skills {
+    background-color: #edece8;
+    padding: 90px 80px 140px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-family: "Conso Medium";
+    font-size: 50px;
+    color: #462521;
+}
+
+.skills-text {
+    font-family: "Inter Medium";
+    font-size: 24px;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    text-align: center;
+    color: #462521;
+    margin-bottom: 50px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    justify-content: center;
+    gap: 50px;
+}
+
+.skills-grid img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.contact-section {
+    background-color: #e8f6fb;
+    padding: 90px 80px 140px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-family: "Conso Medium";
+    font-size: 50px;
+}
+
+.contact-section p {
+    font-family: "Inter Medium";
+    font-size: 24px;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    text-align: center;
+    color: #121212;
+    margin-bottom: 50px;
+}
+
+.project-page {
+    background-color: white;
+    padding: 180px 60px 100px;
+}
+
+.project-page h1 {
+    font-family: "Conso Medium";
+    font-size: 70px;
+    color: #121212;
+    text-align: center;
+}
+
+.project-page p {
+    font-family: "Inter Medium";
+    font-size: 24px;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    text-align: center;
+    color: #121212;
+    margin-bottom: 50px;
+}
+
+.project-card_1 {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition:
+        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.project-card_1:hover {
+    transform: scale(1.03);
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.28)
+}
+
+.project-card_1 img {
+    width: 400px;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+}
+
+.project-card_1 h2 {
+    font-family: "Inter Medium";
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.project-card_1 p {
+    font-family: "Inter Light";
+    margin-top: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 18px;
+    gap: 15px;
+}
+
+.project-btn {
+    align-self: center;
+    margin-top: auto;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #462521;
+    color: #462521;
+    padding: 15px 35px;
+    font-family: "Inter Medium";
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.project-btn:hover {
+    background-color: #462521;
+    color: white;
+}
+
+
+.contact-page {
+    padding: 180px 80px 120px;
+    background-color: white;
+}
+
+.contact-page h1 {
+    font-family: "Conso Medium";
+    font-size: 70px;
+    text-align: center;
+}
+
+.contact-page > h2 {
+   font-family: "Inter Medium";
+    font-size: 24px;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    text-align: center;
+    color: #121212;
+    margin-bottom: 50px; 
+}
+
+.contact-intro {
+    text-align: center;
+    font-family: "Inter Medium";
+    letter-spacing: 4px;
+    line-height: 1.5;
+    margin-bottom: 100px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    align-items: flex-start;
+}
+
+.contact-left,
+.contact-right {
+    width: 400px;
+}
+
+.contact-left p {
+    font-family: "Inter Light";
+    letter-spacing: 2px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-left h2,
+.contact-right h2 {
+    font-family: "Conso Regular";
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact-info_1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-info_1 img {
+    width: 22px;
+}
+
+.social-title {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    letter-spacing: 4px;
+    font-family: "Inter Medium";
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.socials img {
+    width: 35px;
+}
+
+.contact-form {
+    background-color: #edece8;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: 1px solid #999;
+    font-family: "Inter Light";
+    font-size: 18px;
+    letter-spacing: 2px;
+    background-color: white;
+}
+
+.contact-form textarea {
+    height: 140px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #462521;
+    color: white;
+    border: none;
+    padding: 16px 45px;
+    font-family: "Inter Medium";
+    letter-spacing: 4px;
+    cursor: pointer;
+    width: fit-content;
+    align-self: center;
+}
+
+.contact-form button:hover {
+    background-color: #2f1919;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+    background-position: 30% center;
+}
+
+    .hero-text h1,
+    .page-title,
+    .project-page h1,
+    .contact-page h1 {
+        font-size: 40px;
+    }
+
+    .about-text h2,
+    .contact-left h2,
+    .contact-right h2,
+    .skills h2,
+    .projects > h2,
+    .contact-subtitle h2,
+    .home-text h2,
+    .contact-section h2 {
+        font-size: 30px !important;
+    }
+
+
+    .hero-text h2,
+    .skills-text,
+    .contact-page h2,
+    .project-page p,
+    .contact-section p {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .project-card_1 h2,
+    .project-card p {
+    font-size: 20px;
+}
+
+    .home-preview,
+    .about-section,
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-text,
+    .about-text,
+    .contact-left,
+    .contact-right {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card img,
+    .project-card_1 img,
+    .about-image img,
+    .home-image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(4, 70px);
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .skills-grid img {
+        width: 75px;
+        height: 75px;
+        object-fit: contain;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .contact-info {
+        justify-content: center;
+    }
+
+    .contact-info_1 {
+        justify-content: center;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+
+    .projects,
+    .about-page,
+    .contact-page,
+    .project-page,
+    .skills,
+    .contact-section {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .home-text p,
+    .about-text p,
+    .contact-left p {
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+}
