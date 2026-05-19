@@ -86,7 +86,7 @@ nav ul a:hover {
 
 .hero-text h1 {
     font-size: 70px;
-    font-family: "Conso Regular";
+    font-family: "Conso Medium";
 }
 
 .hero-text h2 {
@@ -728,14 +728,31 @@ footer h2 {
 
     .hero {
     background-position: 30% center;
+    padding: 0 20px;
 }
 
-    .hero-text h1,
     .page-title,
     .project-page h1,
     .contact-page h1 {
         font-size: 40px;
     }
+
+    .hero-text {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+        line-height: 1.1;
+        word-break: break-word;
+    }
+
+    .hero-text h2 {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
 
     .about-text h2,
     .contact-left h2,
@@ -749,7 +766,6 @@ footer h2 {
     }
 
 
-    .hero-text h2,
     .skills-text,
     .contact-page h2,
     .project-page p,
