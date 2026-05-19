@@ -90,6 +90,7 @@ nav ul a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 .hero-text h1 {
@@ -119,6 +120,27 @@ nav ul a:hover {
 
 .btn:hover {
     background-color: #2f1919;
+}
+
+.scroll-arrow {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    text-decoration: none;
+    color: #ffffff;
+    animation: bounce 1.8s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(10px);
+    }
 }
 
 .home-preview {
