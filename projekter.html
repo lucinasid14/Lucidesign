@@ -86,11 +86,22 @@
         <a href="#projects-section" class="close-btn">&times;</a>
 
 
-        <img 
-            src="collage.jpg" 
-            alt="Produkt collage"
-            class="popup-collage"
-        >
+        <div class="slider">
+
+    <button class="slider-btn prev">‹</button>
+
+    <div class="slider-track">
+
+        <img src="projekt1.jpg" alt="">
+        <img src="produkt2.jpg" alt="">
+        <img src="produkt3.jpg" alt="">
+        <img src="produkt4.jpg" alt="">
+
+    </div>
+
+    <button class="slider-btn next">›</button>
+
+</div>
 
         <div class="popup-text">
 
@@ -259,6 +270,46 @@
     </div>
 
 </div>
+
+<script>
+
+const track = document.querySelector(".slider-track");
+
+const slides = document.querySelectorAll(".slider-track img");
+
+const nextBtn = document.querySelector(".next");
+
+const prevBtn = document.querySelector(".prev");
+
+let currentIndex = 0;
+
+function updateSlider() {
+
+    track.style.transform =
+        `translateX(-${currentIndex * 100}%)`;
+}
+
+nextBtn.addEventListener("click", () => {
+
+    if(currentIndex < slides.length - 1) {
+
+        currentIndex++;
+
+        updateSlider();
+    }
+});
+
+prevBtn.addEventListener("click", () => {
+
+    if(currentIndex > 0) {
+
+        currentIndex--;
+
+        updateSlider();
+    }
+});
+
+</script>
    
    <footer>
         <div>
