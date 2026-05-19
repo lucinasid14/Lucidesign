@@ -79,11 +79,11 @@
         </div>
     </section>
 
-   <div class="popup" id="popup-produkt">
+   <div class="popup" id="popup-produkt"> <!--pop-uppen har et unikt id og jeg kan derfor lave forskellige styles hvis jeg har brug for det-->
 
     <div class="background-popup">
 
-        <a href="#projects-section" class="close-btn">&times;</a>
+        <a href="#projects-section" class="close-btn">&times;</a> <!--&times; viser et kryds-->
 
 
         <div class="slider">
@@ -273,37 +273,37 @@
 
 <script>
 
-const track = document.querySelector(".slider-track");
+const track = document.querySelector(".slider-track"); //finder et element i html her i class. const=variablen ændres ikke
 
-const slides = document.querySelectorAll(".slider-track img");
+const slides = document.querySelectorAll(".slider-track img"); //finder flere elementer. her alle billeder i slideren
 
-const nextBtn = document.querySelector(".next");
+const nextBtn = document.querySelector(".next"); 
 
 const prevBtn = document.querySelector(".prev");
 
-let currentIndex = 0;
+let currentIndex = 0; //holder styr på hvilket billede der vises. nul starter på første billede. let fordi værdien ændrer sig
 
-function updateSlider() {
+function updateSlider() { //flytter slideren
 
-    track.style.transform =
-        `translateX(-${currentIndex * 100}%)`;
+    track.style.transform = //flytter elementet
+        `translateX(-${currentIndex * 100}%)`; //flytter vandret
 }
 
-nextBtn.addEventListener("click", () => {
+nextBtn.addEventListener("click", () => { //lytter efter en handling fx click
 
-    if(currentIndex < slides.length - 1) {
+    if(currentIndex < slides.length - 1) { //slides.length er antal billeder
 
-        currentIndex++;
+        currentIndex++; //går videre til næste billede
 
-        updateSlider();
+        updateSlider(); //opdaterer sliderens position. if sørger for at man ikke kan gå længere end sidste billede
     }
 });
 
 prevBtn.addEventListener("click", () => {
 
-    if(currentIndex > 0) {
+    if(currentIndex > 0) { //if sørger for at man ikke kan gå før første billede
 
-        currentIndex--;
+        currentIndex--; //går tilbage
 
         updateSlider();
     }
