@@ -22,6 +22,10 @@
     src: url(inter/Inter-Light-BETA.otf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
