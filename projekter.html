@@ -9,7 +9,7 @@
 <body>
       <header>
         <nav>
-           <a href="index.html" class="logo">LUCIDESIGN</a>
+           <a href="index.html" class="header__logo">LUCIDESIGN</a>
 
             <ul>
                 <li><a href="index.html">Hjem</a></li>
@@ -21,77 +21,77 @@
     </header>
     
     <main>
-    <section class="project-page">
+    <section class="projects-page">
             <h1>PROJEKTER</h1>
             <p>ET UDVALG AF MINE PROJEKTER<br>LAVET PÅ MULTIMEDIEDESIGNER<br>UDDANNELSEN & PRIVAT</p>
 
     </section>
 
     <section class="projects">
-        <div class="project-grid">
-            <div class="project-card_1">
+        <div class="projects__grid">
+            <div class="projects__card projects__card--detailed">
             <img src="projekt1.jpg" alt="Produktbilleder">
             <h2>PRODUKTBILLEDER</h2>
             <p>Produktbilleder af udvalgte produkter fra Tromborg til markedsføring.</p>
-            <a href="#popup-produkt" class="project-btn">LÆS MERE</a>
+            <a href="#popup-produkt" class="projects__button">LÆS MERE</a>
             </div>
     
 
-            <div class="project-card_1">
+            <div class="projects__card projects__card--detailed">
             <img src="projekt2.jpg" alt="Plakat">
             <h2>PLAKAT</h2>
             <p>Plakat lavet til at markedsføre et fiktivt brand.</p>
-            <a href="#popup-plakat" class="project-btn"> LÆS MERE</a>
+            <a href="#popup-plakat" class="projects__button"> LÆS MERE</a>
             </div>
 
-            <div class="project-card_1">
+            <div class="projects__card projects__card--detailed">
             <img src="pentool.jpg" alt="Pentool portræt">
             <h2>PENTOOL PORTRÆT</h2>
             <p>Portrætbillede lavet med Pentool i Abobe Illustrator.</p>
-            <a href="#popup-portræt" class="project-btn"> LÆS MERE</a>
+            <a href="#popup-portræt" class="projects__button"> LÆS MERE</a>
             </div>
 
    
-            <div class="project-card_1">
+            <div class="projects__card projects__card--detailed">
             <img src="hjemmeside.jpg" alt="Hjemmeside">
             <h2>HJEMMESIDE</h2>
             <p>Gruppeprojekt med redesign af hjemmeside.</p>
-            <a href="#popup-hjemmeside" class="project-btn"> LÆS MERE</a>
+            <a href="#popup-hjemmeside" class="projects__button"> LÆS MERE</a>
             </div>
 
             
 
 
-            <div class="project-card_1">
+            <div class="projects__card projects__card--detailed">
             <img src="flyer.jpg" alt="Flyer">
             <h2>FLYER</h2>
             <p>Flyer lavet til Odense Zoo, som skulle bruges til et installationsprojekt.</p>
-            <a href="#popup-flyer" class="project-btn"> LÆS MERE</a>
+            <a href="#popup-flyer" class="projects__button"> LÆS MERE</a>
             </div>
         
 
 
-            <div class="project-card_1">
+            <div class="projects__card projects__card--detailed">
             <img src="some.jpg" alt="Somevideo">
             <h2>SOME VIDEO</h2>
             <p>SoMe video som skal vise en hverdagsmakeup med Tromborg produkter.</p>
-            <a href="#popup-some" class="project-btn"> LÆS MERE</a>
+            <a href="#popup-some" class="projects__button"> LÆS MERE</a>
             </div>
         </div>
     </section>
 
    <div class="popup" id="popup-produkt"> <!--pop-uppen har et unikt id og jeg kan derfor lave forskellige styles hvis jeg har brug for det-->
 
-    <div class="background-popup">
+    <div class="popup__content">
 
-        <a href="#projects-section" class="close-btn">&times;</a> <!--&times; viser et kryds-->
+        <a href="#projects-section" class="popup__close">&times;</a> <!--&times; viser et kryds-->
 
 
         <div class="slider">
 
-    <button class="slider-btn prev">‹</button>
+    <button class="slider__button slider__button--prev">‹</button>
 
-    <div class="slider-track">
+    <div class="slider__track">
 
         <img src="projekt1.jpg" alt="Håndcreme">
         <img src="produkt2.jpg" alt="Mist">
@@ -100,11 +100,11 @@
 
     </div>
 
-    <button class="slider-btn next">›</button>
+    <button class="slider__button slider__button--next">›</button>
 
 </div>
 
-        <div class="popup-text">
+        <div class="popup__text">
 
             <h2>PRODUKTBILLEDER</h2>
 
@@ -125,17 +125,17 @@
 
 <div class="popup" id="popup-plakat">
 
-    <div class="background-popup">
+    <div class="popup__content">
 
-        <a href="#projects-section" class="close-btn">&times;</a>
+        <a href="#projects-section" class="popup__close">&times;</a>
 
         <img 
             src="projekt2.jpg" 
             alt="Plakat"
-            class="popup-collage"
+            class="popup__image"
         >
 
-        <div class="popup-text">
+        <div class="popup__text">
 
             <h2>PLAKAT</h2>
 
@@ -153,17 +153,17 @@
 
 <div class="popup" id="popup-portræt">
 
-    <div class="background-popup">
+    <div class="popup__content">
 
-        <a href="#projects-section" class="close-btn">&times;</a>
+        <a href="#projects-section" class="popup__close">&times;</a>
 
         <img 
             src="pentool.jpg" 
             alt="pentool projekt"
-            class="popup-collage"
+            class="popup__image"
         >
 
-        <div class="popup-text">
+        <div class="popup__text">
 
             <h2>PENTOOL PORTRÆT</h2>
 
@@ -181,11 +181,11 @@
 
 <div class="popup" id="popup-hjemmeside">
 
-    <div class="background-popup video-popup">
+    <div class="popup__content popup__content--video">
 
-        <a href="#projects-section" class="close-btn">&times;</a>
+        <a href="#projects-section" class="popup__close">&times;</a>
 
-       <div class="popup-video">
+       <div class="popup__video">
 
             <video autoplay muted loop controls>
 
@@ -195,7 +195,7 @@
 
         </div>
 
-        <div class="popup-text">
+        <div class="popup__text">
 
             <h2>HJEMMESIDE</h2>
 
@@ -215,17 +215,17 @@
 
 <div class="popup" id="popup-flyer">
 
-    <div class="background-popup">
+    <div class="popup__content">
 
-        <a href="#projects-section" class="close-btn">&times;</a>
+        <a href="#projects-section" class="popup__close">&times;</a>
 
         <img 
             src="flyer.jpg" 
             alt="Flyer"
-            class="popup-collage"
+            class="popup__image"
         >
 
-        <div class="popup-text">
+        <div class="popup__text">
 
             <h2>FLYER</h2>
 
@@ -244,10 +244,10 @@
 
 <div class="popup" id="popup-some">
 
-     <div class="background-popup">
-        <a href="#projects-section" class="close-btn">&times;</a>
+     <div class="popup__content">
+        <a href="#projects-section" class="popup__close">&times;</a>
 
-        <div class="popup-video">
+        <div class="popup__video">
 
     <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1551433165530680%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
     </iframe>
@@ -255,7 +255,7 @@
 </div>
 
 
-        <div class="popup-text">
+        <div class="popup__text">
 
             <h2>SOME VIDEO</h2>
 
@@ -318,18 +318,18 @@ prevBtn.addEventListener("click", () => {
             <h2>Lucina Sidenius</h2>
             <h2>5000 Odense C</h2>
             
-           <p class="contact-info">
+           <p class="footer__contact-info">
     <img src="ikoner/mail.png" alt="Mail ikon">
     lucinasid14@gmail.com
 </p>
 
-<p class="contact-info">
+<p class="footer__contact-info">
     <img src="ikoner/tlf.png" alt="Telefon ikon">
     +45 52 38 10 20
 </p>
         </div>
 
-<div class="socials">
+<div class="footer__socials">
     <a href="https://www.linkedin.com/in/lucina-sidenius-3572bb222/" target="_blank">
         <img src="ikoner/linkedin.png" alt="LinkedIn">
     </a>

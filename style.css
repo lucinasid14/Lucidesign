@@ -51,7 +51,7 @@ nav {
     z-index: 1000;
 }
 
-.logo {
+.header__logo {
     font-family: "Conso Medium";
     font-weight: 500;
     font-size: 32px;
@@ -60,7 +60,7 @@ nav {
     letter-spacing: 0.5px;
 }
 
-.logo:hover {
+.header__logo:hover {
     border-bottom: none;
 }
 
@@ -93,13 +93,13 @@ nav ul a:hover {
     position: relative;
 }
 
-.hero-text h1 {
+.hero__content h1 {
     font-size: 70px;
     font-family: "Conso Medium";
     font-weight: 500;
 }
 
-.hero-text h2 {
+.hero__content h2 {
     font-size: 24px;
     margin-bottom: 50px;
     font-family: "Inter Medium";
@@ -107,7 +107,7 @@ nav ul a:hover {
     font-weight: 500;
 }
 
-.btn {
+.button {
     display: inline-block;
     background-color: #462521;
     color: white;
@@ -118,11 +118,11 @@ nav ul a:hover {
     letter-spacing: 4px;
 }
 
-.btn:hover {
+.button:hover {
     background-color: #2f1919;
 }
 
-.scroll-arrow {
+.hero__scroll-arrow {
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -143,7 +143,7 @@ nav ul a:hover {
     }
 }
 
-.home-preview {
+.intro {
     background-color: white;
     display: flex;
     justify-content: center;
@@ -152,11 +152,11 @@ nav ul a:hover {
     padding: 120px 80px;
 }
 
-.home-text {
+.intro__content {
     max-width: 430px;
 }
 
-.home-text h2 {
+.intro__content h2 {
     font-size: 50px;
     margin-bottom: 40px;
     font-family: "Conso Regular";
@@ -164,14 +164,14 @@ nav ul a:hover {
     line-height: 1;
 }
 
-.home-text p {
+.intro__content p {
     line-height: 1.7;
     margin-bottom: 50px;
     letter-spacing: 1px;
     font-size: 18px;
 }
 
-.home-image img {
+.intro__image img {
     width: 350px;
     height: 420px;
     object-fit: cover;
@@ -182,7 +182,7 @@ nav ul a:hover {
     padding: 90px 80px 140px;
 }
 
-.projects h2 {
+.projects > h2 {
     text-align: center;
     font-family: "Conso Medium";
     font-weight: 500;
@@ -190,14 +190,14 @@ nav ul a:hover {
     margin-bottom: 60px;
 }
 
-.project-grid {
+.projects__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     background-color: #e8f6fb;
 }
 
-.project-card {
+.projects__card {
     background-color: white;
     padding: 10px;
     transition:
@@ -205,14 +205,14 @@ nav ul a:hover {
         box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.project-card img {
+.projects__card img {
     width: 400px;
     height: 400px;
     display: block;
     object-fit: cover;
 }
 
-.project-card p {
+.projects__card p {
     font-family: "Inter Medium";
     font-weight: 500;
     margin-top: 10px;
@@ -220,7 +220,7 @@ nav ul a:hover {
     font-size: 24px;
 }
 
-.project-card:hover {
+.projects__card:hover {
     transform: scale(1.03);
     box-shadow: 0 18px 32px rgba(0, 0, 0, 0.28)
 }
@@ -239,36 +239,36 @@ footer h2 {
     font-size: 18px;
 }
 
-.contact-info {
+.footer__contact-info {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 10px;
 }
 
-.contact-info img {
+.footer__contact-info img {
     width: 18px;
     height: 18px;
     object-fit: contain;
 }
 
-.socials {
+.footer__socials {
     display: flex;
     gap: 20px;
 }
 
-.socials img {
+.footer__socials img {
     width: 28px;
     height: 28px;
     object-fit: contain;
 }
 
-.about-page {
+.about {
     background-color: white;
     padding: 140px 80px 100px;
 }
 
-.page-title {
+.about__title {
     font-family: "Conso Medium";
     font-weight: 500;
     font-size: 70px;
@@ -276,7 +276,7 @@ footer h2 {
     margin: 40px 0 120px 0;
 }
 
-.about-section {
+.about__section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,15 +284,15 @@ footer h2 {
     margin-bottom: 100px;
 }
 
-.reverse {
+.about__section--reverse {
     flex-direction: row-reverse;
 }
 
-.about-text {
+.about__text {
     max-width: 420px;
 }
 
-.about-text h2 {
+.about__text h2 {
     font-size: 50px;
     font-family: "Conso Regular";
     font-weight: 400;
@@ -300,13 +300,13 @@ footer h2 {
     line-height: 1;
 }
 
-.about-text p {
+.about__text p {
     font-size: 18px;
     line-height: 1.7;
     letter-spacing: 1px;
 }
 
-.about-image img {
+.about__image img {
     width: 380px;
     height: 475px;
     object-fit: cover;
@@ -325,7 +325,7 @@ footer h2 {
     color: #462521;
 }
 
-.skills-text {
+.skills__text {
     font-family: "Inter Medium";
     font-weight: 500;
     font-size: 24px;
@@ -336,32 +336,32 @@ footer h2 {
     margin-bottom: 50px;
 }
 
-.skills-grid {
+.skills__grid {
     display: grid;
     grid-template-columns: repeat(4, 120px);
     justify-content: center;
     gap: 50px;
 }
 
-.skills-grid img {
+.skills__grid img {
     width: 100px;
     height: 100px;
     object-fit: contain;
 }
 
-.contact-section {
+.contact-cta {
     background-color: #e8f6fb;
     padding: 90px 80px 140px;
     text-align: center;
 }
 
-.contact-section h2 {
+.contact-cta h2 {
     font-family: "Conso Medium";
     font-weight: 500;
     font-size: 50px;
 }
 
-.contact-section p {
+.contact-cta p {
     font-family: "Inter Medium";
     font-weight: 500;
     font-size: 24px;
@@ -372,12 +372,12 @@ footer h2 {
     margin-bottom: 50px;
 }
 
-.project-page {
+.projects-page {
     background-color: white;
     padding: 180px 60px 100px;
 }
 
-.project-page h1 {
+.projects-page h1 {
     font-family: "Conso Medium";
     font-weight: 500;
     font-size: 70px;
@@ -385,7 +385,7 @@ footer h2 {
     text-align: center;
 }
 
-.project-page p {
+.projects-page p {
     font-family: "Inter Medium";
     font-weight: 500;
     font-size: 24px;
@@ -396,7 +396,7 @@ footer h2 {
     margin-bottom: 50px;
 }
 
-.project-card_1 {
+.projects__card--detailed {
     background-color: white;
     padding: 10px;
     display: flex;
@@ -407,19 +407,19 @@ footer h2 {
         box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.project-card_1:hover {
+.projects__card--detailed:hover {
     transform: scale(1.03);
     box-shadow: 0 18px 32px rgba(0, 0, 0, 0.28)
 }
 
-.project-card_1 img {
+.projects__card--detailed img {
     width: 400px;
     height: 400px;
     display: block;
     object-fit: cover;
 }
 
-.project-card_1 h2 {
+.projects__card--detailed h2 {
     font-family: "Inter Medium";
     font-weight: 500;
     font-size: 24px;
@@ -429,7 +429,7 @@ footer h2 {
     text-align: left;
 }
 
-.project-card_1 p {
+.projects__card--detailed p {
     font-family: "Inter Light";
     margin-top: 10px;
     margin-bottom: 30px;
@@ -439,7 +439,7 @@ footer h2 {
     gap: 15px;
 }
 
-.project-btn {
+.projects__button {
     align-self: center;
     margin-top: auto;
     display: inline-block;
@@ -453,7 +453,7 @@ footer h2 {
     margin-bottom: 30px;
 }
 
-.project-btn:hover {
+.projects__button:hover {
     background-color: #462521;
     color: white;
 }
@@ -486,7 +486,7 @@ footer h2 {
 }
 
 
-.background-popup {
+.popup__content {
     position: relative; /*Position: relative bruges til at skabe et referencepunkt for elementer med position: absolute. I min popup bruger jeg det, så luk-knappen kan placeres korrekt inde i popup-boksen.*/
     background: #ffffff;
     width: 48vw;
@@ -495,7 +495,7 @@ footer h2 {
 }
 
 
-.close-btn {
+.popup__close {
     position: absolute; /*placeres ift referencepunktet*/
     top: 18px;
     right: 18px;
@@ -519,19 +519,19 @@ footer h2 {
     width: 100%;
 }
 
-.slider-track {
+.slider__track {
     display: flex;
     transition: transform 0.4s ease;
 }
 
-.slider-track img {
+.slider__track img {
     width: 100%; /*fylder hele sliderens bredde*/
     flex-shrink: 0; /*billedet må ikke krympe*/
     max-height: 68vh; /* må maks fylde 68% af skærmens højde*/
     object-fit: contain; /*hele billedet skal kunne ses uden at blive beskåret*/
 }
 
-.slider-btn {
+.slider__button {
     position: absolute; /*pilen placeres ovenpå slideren*/
     top: 50%; /*pilen starter midt på slideren lodret*/
     transform: translateY(-50%); /*flytter pilen lidt op så den centrere præcist*/
@@ -547,19 +547,19 @@ footer h2 {
     line-height: 1;
 }
 
-.slider-btn:hover {
+.slider__button:hover {
     opacity: 0.5;
 }
 
-.prev {
+.slider__button--prev {
     left: 10px;
 }
 
-.next {
+.slider__button--next {
     right: 10px;
 }
 
-.popup-collage {
+.popup__image {
     width: 100%;
     max-height: 68vh;
     object-fit: contain;
@@ -568,11 +568,11 @@ footer h2 {
 }
 
 
-.popup-text {
+.popup__text {
     padding-top: 18px;
 }
 
-.popup-text h2 {
+.popup__text h2 {
     font-family: "Inter Medium";
     font-weight: 500;
     font-size: 24px;
@@ -580,19 +580,19 @@ footer h2 {
     margin-bottom: 10px;
 }
 
-.popup-text p {
+.popup__text p {
     font-family: "Inter Light";
     font-size: 18px;
     line-height: 1.6;
     letter-spacing: 1px;
 }
 
-.popup-video { /*containeren omkring videoen*/
+.popup__video { /*containeren omkring videoen*/
     display: flex;
     justify-content: center;
 }
 
-.popup-video video { /*min mp 4 video*/
+.popup__video video { /*min mp 4 video*/
     width: 100%;
     max-width: 1000px;
     max-height: 75vh;
@@ -601,12 +601,12 @@ footer h2 {
     border-radius: 10px;
 }
 
-.video-popup {
+.popup__content--video {
     width: 70vw;
     max-width: 1200px;
 }
 
-.popup-video iframe { /*reel*/
+.popup__video iframe { /*reel*/
     width: 320px;
     height: 570px;
     border: none;
@@ -614,19 +614,19 @@ footer h2 {
 }
 
 
-.contact-page {
+.contact {
     padding: 180px 80px 120px;
     background-color: white;
 }
 
-.contact-page h1 {
+.contact h1 {
     font-family: "Conso Medium";
     font-weight: 500;
     font-size: 70px;
     text-align: center;
 }
 
-.contact-page > h2 {
+.contact > h2 {
    font-family: "Inter Medium";
    font-weight: 500;
     font-size: 24px;
@@ -646,19 +646,19 @@ footer h2 {
     margin-bottom: 100px;
 }
 
-.contact-container {
+.contact__container {
     display: flex;
     justify-content: center;
     gap: 120px;
     align-items: flex-start;
 }
 
-.contact-left,
-.contact-right {
+.contact__info,
+.contact__form-wrapper {
     width: 400px;
 }
 
-.contact-left p {
+.contact__info p {
     font-family: "Inter Light";
     letter-spacing: 2px;
     text-align: left;
@@ -666,31 +666,31 @@ footer h2 {
     line-height: 1.4;
 }
 
-.contact-left h2,
-.contact-right h2 {
+.contact__info h2,
+.contact__form-wrapper h2 {
     font-family: "Conso Regular";
     font-weight: 400;
     font-size: 50px;
     margin-bottom: 40px;
 }
 
-.info-block {
+.contact__info-block {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-.contact-info_1 {
+.contact__item {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.contact-info_1 img {
+.contact__item img {
     width: 22px;
 }
 
-.social-title {
+.contact__social-title {
     margin-top: 50px;
     margin-bottom: 25px;
     letter-spacing: 4px;
@@ -698,16 +698,16 @@ footer h2 {
     font-weight: 500;
 }
 
-.socials {
+.footer__socials {
     display: flex;
     gap: 20px;
 }
 
-.socials img {
+.footer__socials img {
     width: 35px;
 }
 
-.contact-form {
+.contact__form {
     background-color: #edece8;
     padding: 30px;
     display: flex;
@@ -715,8 +715,8 @@ footer h2 {
     gap: 20px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact__form input,
+.contact__form textarea {
     padding: 15px;
     border: 1px solid #999;
     font-family: "Inter Light";
@@ -725,12 +725,12 @@ footer h2 {
     background-color: white;
 }
 
-.contact-form textarea {
+.contact__form textarea {
     height: 140px;
     resize: none;
 }
 
-.contact-form button {
+.contact__form button {
     background-color: #462521;
     color: white;
     border: none;
@@ -743,7 +743,7 @@ footer h2 {
     align-self: center;
 }
 
-.contact-form button:hover {
+.contact__form button:hover {
     background-color: #2f1919;
 }
 
@@ -766,88 +766,88 @@ footer h2 {
     padding: 0 20px;
 }
 
-    .page-title,
-    .project-page h1,
-    .contact-page h1 {
+    .about__title,
+    .projects-page h1,
+    .contact h1 {
         font-size: 40px;
     }
 
-    .hero-text {
+    .hero__content {
         max-width: 100%;
         padding: 0 10px;
     }
 
-    .hero-text h1 {
+    .hero__content h1 {
         font-size: 34px;
         line-height: 1.1;
     }
 
-    .hero-text h2 {
+    .hero__content h2 {
         font-size: 16px;
         line-height: 1.4;
     }
 
 
-    .about-text h2,
-    .contact-left h2,
-    .contact-right h2,
+    .about__text h2,
+    .contact__info h2,
+    .contact__form-wrapper h2,
     .skills h2,
     .projects > h2,
     .contact-subtitle h2,
-    .home-text h2,
-    .contact-section h2 {
+    .intro__content h2,
+    .contact-cta h2 {
         font-size: 30px !important;
     }
 
 
-    .skills-text,
-    .contact-page h2,
-    .project-page p,
-    .contact-section p {
+    .skills__text,
+    .contact h2,
+    .projects-page p,
+    .contact-cta p {
         font-size: 18px;
         letter-spacing: 2px;
     }
 
-    .project-card_1 h2,
-    .project-card p {
+    .projects__card--detailed h2,
+    .projects__card p {
     font-size: 20px;
 }
 
-    .home-preview,
-    .about-section,
-    .contact-container {
+    .intro,
+    .about__section,
+    .contact__container {
         flex-direction: column;
         text-align: center;
     }
 
-    .home-text,
-    .about-text,
-    .contact-left,
-    .contact-right {
+    .intro__content,
+    .about__text,
+    .contact__info,
+    .contact__form-wrapper {
         max-width: 100%;
         width: 100%;
     }
 
-    .project-grid {
+    .projects__grid {
         grid-template-columns: 1fr;
     }
 
-    .project-card img,
-    .project-card_1 img,
-    .about-image img,
-    .home-image img {
+    .projects__card img,
+    .projects__card--detailed img,
+    .about__image img,
+    .intro__image img {
         width: 100%;
         height: 300px;
         object-fit: cover;
     }
 
-    .skills-grid {
+    .skills__grid {
         grid-template-columns: repeat(4, 70px);
         justify-content: center;
         gap: 15px;
     }
 
-    .skills-grid img {
+    .skills__grid img {
         width: 75px;
         height: 75px;
         object-fit: contain;
@@ -859,36 +859,36 @@ footer h2 {
         text-align: center;
     }
 
-    .contact-info {
+    .footer__contact-info {
         justify-content: center;
     }
 
-    .contact-info_1 {
+    .contact__item {
         justify-content: center;
     }
 
-    .socials {
+    .footer__socials {
         justify-content: center;
     }
 
 
     .projects,
-    .about-page,
-    .contact-page,
-    .project-page,
+    .about,
+    .contact,
+    .projects-page,
     .skills,
-    .contact-section {
+    .contact-cta {
         padding-left: 25px;
         padding-right: 25px;
     }
 
-    .contact-form {
+    .contact__form {
         width: 100%;
     }
 
-    .home-text p,
-    .about-text p,
-    .contact-left p {
+    .intro__content p,
+    .about__text p,
+    .contact__info p {
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 1px;
@@ -898,34 +898,34 @@ footer h2 {
     padding: 16px;
     }
 
-    .background-popup {
+    .popup__content {
         width: 90vw;
         max-height: 85vh;
         overflow-y: auto;
         padding: 18px;
 }
 
-    .popup-collage {
+    .popup__image {
         max-height: none;
     }
 
-   .popup-text h2 {
+   .popup__text h2 {
     font-size: 16px;
     letter-spacing: 4px;
     margin-bottom: 10px;
 }
 
-.popup-text p {
+.popup__text p {
     font-size: 13px;
     line-height: 1.5;
     letter-spacing: 1px;
 }
 
-    .close-btn {
+    .popup__close {
         font-size: 32px;
     }
 
-    .popup-video iframe {
+    .popup__video iframe {
         width: 240px;
         height: 430px;
 }
@@ -933,28 +933,28 @@ footer h2 {
 
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    .project-grid {
+    .projects__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .project-card img,
-    .project-card_1 img {
+    .projects__card img,
+    .projects__card--detailed img {
         width: 100%;
         height: 300px;
     }
 
-    .home-preview,
-    .about-section,
-    .contact-container {
+    .intro,
+    .about__section,
+    .contact__container {
         gap: 40px;
         padding: 80px 40px;
     }
 
-    .hero-text h1 {
+    .hero__content h1 {
         font-size: 55px;
     }
 
-    .hero-text h2 {
+    .hero__content h2 {
         font-size: 20px;
     }
 
@@ -962,35 +962,35 @@ footer h2 {
         padding: 20px 40px;
     }
 
-   .home-preview,
-    .about-section,
-    .contact-container {
+   .intro,
+    .about__section,
+    .contact__container {
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 50px;
     }
 
-    .about-section {
+    .about__section {
     margin-bottom: 10px;
 }
 
-    .home-text,
-    .about-text,
-    .contact-left,
-    .contact-right {
+    .intro__content,
+    .about__text,
+    .contact__info,
+    .contact__form-wrapper {
         width: 100%;
         max-width: 700px;
     }
 
-    .contact-info,
-    .contact-info_1,
-    .socials {
+    .footer__contact-info,
+    .contact__item,
+    .footer__socials {
         justify-content: center;
     }
 
     
-    .contact-left p {
+    .contact__info p {
         text-align: center;
     }
 
@@ -1001,44 +1001,44 @@ footer h2 {
     gap: 25px;
 }
 
-.contact-info img {
+.footer__contact-info img {
     display: block;
 }
 
-.background-popup {
+.popup__content {
     width: 82vw;
     max-width: 900px;
     padding: 24px;
 }
 
-.video-popup {
+.popup__content--video {
     width: 82vw;
      max-width: 1000px;
 }
 
-.popup-collage {
+.popup__image {
     width: 100%;
     max-height: 60vh;
     object-fit: contain;
 }
 
-.popup-video video {
+.popup__video video {
     width: 100%;
     max-width: 700px;
     max-height: 60vh;
 }
 
-.popup-video iframe {
+.popup__video iframe {
     width: 300px;
     height: 540px;
 }
 
-.popup-text h2 {
+.popup__text h2 {
     font-size: 22px;
     letter-spacing: 4px;
 }
 
-.popup-text p {
+.popup__text p {
     font-size: 16px;
     line-height: 1.6;
 }
