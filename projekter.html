@@ -29,7 +29,7 @@
 
     <section class="projects">
         <div class="projects__grid">
-            <div class="projects__card projects__card--detailed">
+            <div class="projects__card--detailed">
             <img src="projekt1.jpg" alt="Produktbilleder">
             <h2>PRODUKTBILLEDER</h2>
             <p>Produktbilleder af udvalgte produkter fra Tromborg til markedsføring.</p>
@@ -37,14 +37,14 @@
             </div>
     
 
-            <div class="projects__card projects__card--detailed">
+            <div class="projects__card--detailed">
             <img src="projekt2.jpg" alt="Plakat">
             <h2>PLAKAT</h2>
             <p>Plakat lavet til at markedsføre et fiktivt brand.</p>
             <a href="#popup-plakat" class="projects__button"> LÆS MERE</a>
             </div>
 
-            <div class="projects__card projects__card--detailed">
+            <div class="projects__card--detailed">
             <img src="pentool.jpg" alt="Pentool portræt">
             <h2>PENTOOL PORTRÆT</h2>
             <p>Portrætbillede lavet med Pentool i Abobe Illustrator.</p>
@@ -52,7 +52,7 @@
             </div>
 
    
-            <div class="projects__card projects__card--detailed">
+            <div class="projects__card--detailed">
             <img src="hjemmeside.jpg" alt="Hjemmeside">
             <h2>HJEMMESIDE</h2>
             <p>Gruppeprojekt med redesign af hjemmeside.</p>
@@ -62,7 +62,7 @@
             
 
 
-            <div class="projects__card projects__card--detailed">
+            <div class="projects__card--detailed">
             <img src="flyer.jpg" alt="Flyer">
             <h2>FLYER</h2>
             <p>Flyer lavet til Odense Zoo, som skulle bruges til et installationsprojekt.</p>
@@ -71,7 +71,7 @@
         
 
 
-            <div class="projects__card projects__card--detailed">
+            <div class="projects__card--detailed">
             <img src="some.jpg" alt="Somevideo">
             <h2>SOME VIDEO</h2>
             <p>SoMe video som skal vise en hverdagsmakeup med Tromborg produkter.</p>
@@ -274,13 +274,15 @@
 
 <script>
 
-const track = document.querySelector(".slider-track"); //finder et element i html her i class. const=variablen ændres ikke
+const slider = document.querySelector(".slider"); //finder slider-containeren
 
-const slides = document.querySelectorAll(".slider-track img"); //finder flere elementer. her alle billeder i slideren
+const track = slider.querySelector(".slider__track"); //finder tracket inde i slideren
 
-const nextBtn = document.querySelector(".next"); 
+const slides = slider.querySelectorAll(".slider__track img"); //finder alle billeder i slideren
 
-const prevBtn = document.querySelector(".prev");
+const nextBtn = slider.querySelector(".slider__button--next"); //finder næste-knappen
+
+const prevBtn = slider.querySelector(".slider__button--prev"); //finder forrige-knappen
 
 let currentIndex = 0; //holder styr på hvilket billede der vises. nul starter på første billede. let fordi værdien ændrer sig
 
@@ -309,7 +311,6 @@ prevBtn.addEventListener("click", () => {
         updateSlider();
     }
 });
-
 </script>
     </main>
    
