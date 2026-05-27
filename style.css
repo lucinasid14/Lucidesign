@@ -83,7 +83,7 @@ nav ul a:hover {
 
 .hero {
     height: 100vh; /*90% af skærmens højde*/
-    background-image: url("hero.jpg");
+    background-image: url("portrætter/hero.jpg");
     background-size: cover; /*billedet fylder hele sektionen*/
     background-position: center;
     display: flex;
