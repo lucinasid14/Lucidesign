@@ -217,7 +217,7 @@ nav ul a:hover {
     font-weight: 500;
     margin-top: 10px;
     letter-spacing: 4px;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .projects__card:hover {
@@ -328,7 +328,7 @@ footer h2 {
 .skills__text {
     font-family: "Inter Medium";
     font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 4px;
     line-height: 1.5;
     text-align: center;
@@ -364,7 +364,7 @@ footer h2 {
 .contact-cta p {
     font-family: "Inter Medium";
     font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 4px;
     line-height: 1.5;
     text-align: center;
@@ -388,7 +388,7 @@ footer h2 {
 .projects-page p {
     font-family: "Inter Medium";
     font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 4px;
     line-height: 1.5;
     text-align: center;
@@ -422,7 +422,7 @@ footer h2 {
 .projects__card--detailed h2 {
     font-family: "Inter Medium";
     font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     margin-top: 10px;
     margin-bottom: 1px;
     letter-spacing: 4px;
@@ -489,7 +489,7 @@ footer h2 {
 .popup__content {
     position: relative; /*Position: relative bruges til at skabe et referencepunkt for elementer med position: absolute. I min popup bruger jeg det, så luk-knappen kan placeres korrekt inde i popup-boksen.*/
     background: #ffffff;
-    width: 48vw;
+    width: 60vw;
     max-width: 900px;
     padding: 22px;
 }
@@ -575,7 +575,7 @@ footer h2 {
 .popup__text h2 {
     font-family: "Inter Medium";
     font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 4px;
     margin-bottom: 10px;
 }
@@ -629,7 +629,7 @@ footer h2 {
 .contact > h2 {
    font-family: "Inter Medium";
    font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 4px;
     line-height: 1.5;
     text-align: center;
@@ -637,14 +637,6 @@ footer h2 {
     margin-bottom: 50px; 
 }
 
-.contact-intro {
-    text-align: center;
-    font-family: "Inter Medium";
-    font-weight: 500;
-    letter-spacing: 4px;
-    line-height: 1.5;
-    margin-bottom: 100px;
-}
 
 .contact__container {
     display: flex;
